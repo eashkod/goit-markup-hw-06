@@ -699,6 +699,8 @@ body {
   transform: translate(-50%, -50%) scale(0) rotate(-360deg);
 }
 
+
+
 .modal-close-btn {
   position: absolute;
   right: 8px;
@@ -712,6 +714,15 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
+
+.modal-close-btn:hover .modal-close-icon {
+  fill: var(--hover-color);
+}
+
+.modal-close-btn:focus .modal-close-icon {
+  fill: var(--hover-color);
+}
+
 
 .is-hidden {
   opacity: 0;
@@ -744,6 +755,7 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .modal-icon {
   position: absolute;
   top:50%;
@@ -759,20 +771,7 @@ body {
   fill: var(--hover-color);
 }
 
-.modal-comment {
-  width: 448px;
-  height: 120px;
-  margin-top: 4px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  resize: none;
-  padding: 12px 16px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
+
 
 .visually-hidden {
   position: absolute;
@@ -797,6 +796,22 @@ body {
   display: block;
 }
 
+.modal-comment {
+  width: 448px;
+  height: 120px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+
 .check-text {
   font-size: 14px;
   color: #555555;
@@ -804,6 +819,10 @@ body {
   align-items: center;
   position: relative;
   justify-content: center;
+}
+
+.check-text:hover{
+  cursor: pointer;
 }
 
 .check-text span {
